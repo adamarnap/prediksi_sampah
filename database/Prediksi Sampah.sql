@@ -333,13 +333,9 @@ CREATE TABLE `tb_prediksi` (
   PRIMARY KEY (`id_prediksi`),
   KEY `id_sungai` (`id_sungai`),
   CONSTRAINT `tb_prediksi_ibfk_2` FOREIGN KEY (`id_sungai`) REFERENCES `tb_sungai` (`id_sungai`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 /*Data for the table `tb_prediksi` */
-
-insert  into `tb_prediksi`(`id_prediksi`,`id_sungai`,`tahun_prediksi`,`data_prediksi`,`created`,`created_name`) values 
-(3,1,'2024','[{\"vol_predicted\":1160.8,\"bulan_predicted\":\"Januari\"},{\"vol_predicted\":1161.77,\"bulan_predicted\":\"Februari\"},{\"vol_predicted\":1162.75,\"bulan_predicted\":\"Maret\"},{\"vol_predicted\":1163.73,\"bulan_predicted\":\"April\"},{\"vol_predicted\":1164.7,\"bulan_predicted\":\"Mei\"},{\"vol_predicted\":1165.68,\"bulan_predicted\":\"Juni\"},{\"vol_predicted\":1166.66,\"bulan_predicted\":\"Juli\"},{\"vol_predicted\":1167.63,\"bulan_predicted\":\"Agustus\"},{\"vol_predicted\":1168.61,\"bulan_predicted\":\"September\"},{\"vol_predicted\":1169.59,\"bulan_predicted\":\"Oktober\"},{\"vol_predicted\":1170.57,\"bulan_predicted\":\"November\"},{\"vol_predicted\":1171.54,\"bulan_predicted\":\"Desember\"}]','2023-12-07 16:15:46','adminbase'),
-(4,1,'2022','[{\"vol_predicted\":1137.35,\"bulan_predicted\":\"Januari\"},{\"vol_predicted\":1138.33,\"bulan_predicted\":\"Februari\"},{\"vol_predicted\":1139.3,\"bulan_predicted\":\"Maret\"},{\"vol_predicted\":1140.28,\"bulan_predicted\":\"April\"},{\"vol_predicted\":1141.26,\"bulan_predicted\":\"Mei\"},{\"vol_predicted\":1142.23,\"bulan_predicted\":\"Juni\"},{\"vol_predicted\":1143.21,\"bulan_predicted\":\"Juli\"},{\"vol_predicted\":1144.19,\"bulan_predicted\":\"Agustus\"},{\"vol_predicted\":1145.17,\"bulan_predicted\":\"September\"},{\"vol_predicted\":1146.14,\"bulan_predicted\":\"Oktober\"},{\"vol_predicted\":1147.12,\"bulan_predicted\":\"November\"},{\"vol_predicted\":1148.1,\"bulan_predicted\":\"Desember\"}]','2023-12-07 16:37:28','adminbase');
 
 /*Table structure for table `tb_sampah` */
 
@@ -355,7 +351,7 @@ CREATE TABLE `tb_sampah` (
   PRIMARY KEY (`id_sampah`),
   KEY `id_sungai` (`id_sungai`),
   CONSTRAINT `tb_sampah_ibfk_1` FOREIGN KEY (`id_sungai`) REFERENCES `tb_sungai` (`id_sungai`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=39 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=37 DEFAULT CHARSET=latin1;
 
 /*Data for the table `tb_sampah` */
 

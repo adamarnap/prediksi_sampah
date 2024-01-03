@@ -73,7 +73,7 @@
          </div>
      </div>
 
-     <!-- Modals Add Role-->
+     <!-- Modals Add Prediksi-->
      <div class="modal fade bd-example-modal-lg" id="tambah_data_prediksi_baru" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
          <div class="modal-dialog modal-lg">
              <div class="modal-content">
